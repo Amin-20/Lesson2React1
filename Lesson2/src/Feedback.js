@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Feedback(feedback) {
+export default function Feedback({feedback}) {
   return (
     <div>
       <div>
@@ -11,9 +11,7 @@ export default function Feedback(feedback) {
               display: "inline-block",
             }}
           >
-
           </div>
-          
           <div
             style={{
               display: "inline-block",
@@ -24,7 +22,6 @@ export default function Feedback(feedback) {
               marginBottom: "10px",
             }}
           >
-            
             <h1
               style={{
                 marginTop: "0px",
