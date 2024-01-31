@@ -4,11 +4,11 @@ export default function NavBar({ cinemaInfo }) {
   return (
     <div
       style={{
-        width: "60%",
+        width: "100%",
         height: "auto",
-        backgroundColor: "blue",
-        marginLeft: "20%",
+        backgroundColor: "#F76C4E",
         padding: "0px  0px 10px 0px",
+        fontFamily: "'lucida grande, tahoma, verdana, arial, sans-serif"
       }}
     >
       <section

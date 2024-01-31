@@ -1,6 +1,13 @@
 import React from "react";
 
 export default function Movie({ movieInfo }) {
+
+  const style={
+    color:"black"
+
+
+  }
+
   return (
     <div>
       <div
@@ -12,35 +19,21 @@ export default function Movie({ movieInfo }) {
           textAlign: "center",
           border: "2px solid gray",
           display: "inline-block",
-          background: "deepskyblue",
+          background: "#EBBDB4 ",
           borderRadius: "10px",
         }}
       >
-        <div
-          style={{
-            display: "flex",
-          }}
-        >
+        <div style={{ display: "flex" }}>
           <img
-            style={{
-              width: "250px",
-              margin: "10px",
-              display: "inline-block",
-            }}
+            style={{ width: "250px", margin: "10px", display: "inline-block" }}
             src={movieInfo.img}
-            alt="image"
-          ></img>
-          <h2
-            style={{
-              marginLeft: "10px",
-              marginBottom: "30px",
-            }}
-          >
-            <p >Name : {movieInfo.name}</p>
-            <p>Genre : {movieInfo.genre}</p>
-            <p>Director : {movieInfo.director}</p>
-            <p>Imdp : {movieInfo.imdb}</p>
-            <p>Description : {movieInfo.description}</p>
+            alt="image"></img>
+          <h2 style={{ marginLeft: "10px", marginBottom: "30px" }}>
+            <p style={style}>Name : {movieInfo.name}</p>
+            <p style={style}>Genre : {movieInfo.genre}</p>
+            <p style={style}>Director : {movieInfo.director}</p>
+            <p style={style}>Imdp : {movieInfo.imdb}</p>
+            <p style={style}>Description : {movieInfo.description}</p>
           </h2>
         </div>
       </div>

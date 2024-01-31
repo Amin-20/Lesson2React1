@@ -14,27 +14,27 @@ const movies = [
     img: "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
   },
   {
-    name: "Kurtlar vadisi",
-    genre: "Mafia",
-    director: "Elchin Guliev",
-    imdb: "999",
-    description: "Better than modern movies",
-    img: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fsfera.az%2Fhadise%2F237506%2Fkurtlar-vadisi-ile-taninan-meshur-is-adamina-gllelendi-veziyyeti-airdirfoto%2F&psig=AOvVaw18Aqd3dGvdVIrAvc_Z3lGp&ust=1706287969806000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCICfj5eA-YMDFQAAAAAdAAAAABAD",
+    name: "Argylle",
+    genre: "Action,Thriller",
+    director: "Matthew Vaughn",
+    imdb: "7.1",
+    description: "A reclusive author who write espionage novels about a secret agent and a global spy syndicate realizes the plot of the new book she's writing starts to mirror real-world events, in real time.",
+    img: "https://m.media-amazon.com/images/M/MV5BZDM3YTg4MGUtZmUxNi00YmEyLTllNTctNjYyNjZlZGViNmFhXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UY5000_.jpg"
   },
   {
-    name: "Yali capkini",
-    genre: "Drama",
-    director: "Amin Atakishiyev",
-    imdb: "2.1",
-    description: "A movie to watch while eating",
-    img: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fonedio.com%2Fhaber%2Fyali-capkini-konusu-nedir-ve-oyunculari-kimlerdir-yali-capkini-gercek-hikaye-mi-hangi-kitaptan-uyarlama-1142681&psig=AOvVaw3F7fdlyvXK4aYow0rbnSu7&ust=1706288165646000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPDSoPKA-YMDFQAAAAAdAAAAABAH",
+    name: "Oppenheimer",
+    genre: "Biography,Drana,History",
+    director: "Christopher Nolan",
+    imdb: "8.4",
+    description: "The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb.",
+    img: "https://m.media-amazon.com/images/M/MV5BMDBmYTZjNjUtN2M1MS00MTQ2LTk2ODgtNzc2M2QyZGE5NTVjXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_FMjpg_UY3454_.jpg",
   },
 ];
 
 const cinema = {
-  name: "Park Cinema",
-  address: "Park Bulvar",
-  rating: "9.3",
+  name: "Magic Cinema",
+  address: "Baku, Mashtagha",
+  rating: "8.7",
 };
 
 const feedbacks = [
@@ -50,7 +50,7 @@ const feedbacks = [
 ];
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor:"#F1A494"}}>
       <NavBar cinemaInfo={cinema}></NavBar>
       {movies.map((m) => (
         <Movie movieInfo={m}></Movie>
