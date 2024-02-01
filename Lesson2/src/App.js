@@ -1,5 +1,4 @@
 import "./App.css";
-import Feedback from "./Feedback";
 import Movie from "./Movie";
 import NavBar from "./NavBar";
 
@@ -37,17 +36,6 @@ const cinema = {
   rating: "8.7",
 };
 
-const feedbacks = [
-  {
-    username: "Elvin Jamalzade",
-    content: "The seats are too close to the TV",
-  },
-  {
-    username: "Shireli Nuriyev",
-    content:
-      "The seats are uncomfortable for sleeping, I can't get a good sleep",
-  },
-];
 function App() {
   return (
     <div className="App" style={{backgroundColor:"#F1A494"}}>
@@ -55,17 +43,6 @@ function App() {
       {movies.map((m) => (
         <Movie movieInfo={m}></Movie>
       ))}
-
-      <h1
-        style={{
-          backgroundColor: "gray",
-          color: "white",
-        }}
-      >
-        Feedbacks
-      </h1>
-      <Feedback feedback={feedbacks[0]}></Feedback>
-      <Feedback feedback={feedbacks[1]}></Feedback>
     </div>
   );
 }
